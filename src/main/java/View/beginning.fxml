@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control.beginningController">
+   <children>
+      <Label alignment="CENTER" layoutY="35.0" prefHeight="92.0" prefWidth="800.0" text="信息加解密系统">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="14.0" layoutY="140.0" prefHeight="42.0" prefWidth="784.0" text="亲爱的用户 ：">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="57.0" layoutY="209.0" prefHeight="54.0" prefWidth="660.0" text="欢迎使用信息加解密系统，请选择进行加密或者解密">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_1" layoutX="163.0" layoutY="331.0" mnemonicParsing="false" onAction="#buttonClickEvent1" prefHeight="54.0" prefWidth="150.0" text="加密" />
+      <Button fx:id="btn_2" layoutX="444.0" layoutY="331.0" mnemonicParsing="false" onAction="#buttonClickEvent2" prefHeight="54.0" prefWidth="150.0" text="解密" />
+      <Button fx:id="btn_3" layoutX="642.0" layoutY="423.0" mnemonicParsing="false" onAction="#buttonClickEvent3" prefHeight="36.0" prefWidth="119.0" text="退出" />
+   </children>
+</AnchorPane>

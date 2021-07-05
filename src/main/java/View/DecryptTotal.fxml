@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="653.0" prefWidth="817.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control.DecryptTotalController">
+    <children>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutY="-6.0" prefHeight="46.0" prefWidth="817.0" text="解密服务选择">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="15.0" layoutY="40.0" prefHeight="55.0" prefWidth="251.0" text="请选择以下解密类型">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Button fx:id="CaesarDButton" layoutX="78.0" layoutY="119.0" mnemonicParsing="false" onAction="#CaesarDEvent" prefHeight="46.0" prefWidth="125.0" text="Caesar" />
+        <Button fx:id="keywordDButton" layoutX="266.0" layoutY="119.0" mnemonicParsing="false" onAction="#keywordDEvent" prefHeight="46.0" prefWidth="125.0" text="Keyword" />
+        <Button fx:id="AffineDButton" layoutX="456.0" layoutY="119.0" mnemonicParsing="false" onAction="#AffineDEvent" prefHeight="46.0" prefWidth="125.0" text="Affine" />
+        <Button fx:id="MultiliteralDButton" layoutX="78.0" layoutY="205.0" mnemonicParsing="false" onAction="#MultiliteralDEvent" prefHeight="46.0" prefWidth="125.0" text="Multiliteral" />
+        <Button fx:id="VigenereDButton" layoutX="266.0" layoutY="205.0" mnemonicParsing="false" onAction="#VigenereDEvent" prefHeight="46.0" prefWidth="125.0" text="Vigenere" />
+        <Button fx:id="PlayfairDButton" layoutX="456.0" layoutY="205.0" mnemonicParsing="false" onAction="#PlayfairDEvent" prefHeight="46.0" prefWidth="125.0" text="Playfair" />
+        <Button fx:id="AutokeyciphertextDButton" layoutX="79.0" layoutY="379.0" mnemonicParsing="false" onAction="#AutokeyciphertextDEvent" prefHeight="46.0" prefWidth="314.0" text="Autokey ciphertext" />
+        <Button fx:id="AutokeyplaintextDButton" layoutX="456.0" layoutY="378.0" mnemonicParsing="false" onAction="#AutokeyplaintextDEvent" prefHeight="46.0" prefWidth="314.0" text="Autokey plaintext" />
+        <Button fx:id="DoubleTranspositionDButton" layoutX="79.0" layoutY="536.0" mnemonicParsing="false" onAction="#DoubleTranspositionDEvent" prefHeight="46.0" prefWidth="314.0" text="Double Transposition" />
+        <Button fx:id="PermutationDButton" layoutX="78.0" layoutY="455.0" mnemonicParsing="false" onAction="#PermutationDEvent" prefHeight="46.0" prefWidth="314.0" text="Permutation" />
+        <Button fx:id="ColumnpermutationDButton" layoutX="456.0" layoutY="455.0" mnemonicParsing="false" onAction="#ColumnpermutationDEvent" prefHeight="46.0" prefWidth="314.0" text="Column permutation" />
+        <Button fx:id="RC4DButton" layoutX="642.0" layoutY="119.0" mnemonicParsing="false" onAction="#RC4DEvent" prefHeight="46.0" prefWidth="125.0" text="RC4" />
+        <Button fx:id="DESDButton" layoutX="78.0" layoutY="289.0" mnemonicParsing="false" onAction="#DESDEvent" prefHeight="46.0" prefWidth="125.0" text="DES" />
+        <Button fx:id="AESDButton" layoutX="642.0" layoutY="205.0" mnemonicParsing="false" onAction="#AESDEvent" prefHeight="46.0" prefWidth="125.0" text="AES" />
+        <Button fx:id="RSADButton" layoutX="266.0" layoutY="289.0" mnemonicParsing="false" onAction="#RSADEvent" prefHeight="46.0" prefWidth="125.0" text="RSA" />
+        <Button fx:id="ECCDButton" layoutX="642.0" layoutY="536.0" mnemonicParsing="false" onAction="#ECCDEvent" prefHeight="46.0" prefWidth="125.0" text="ECC" />
+        <Button fx:id="DHDButton" layoutX="456.0" layoutY="289.0" mnemonicParsing="false" onAction="#DHDEvent" prefHeight="46.0" prefWidth="125.0" text="DH密钥交换" />
+        <Button fx:id="btn_7" layoutX="710.0" layoutY="602.0" mnemonicParsing="false" onAction="#buttonClickEvent7" text="返回" />
+    </children>
+</AnchorPane>

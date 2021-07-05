@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="538.0" prefWidth="704.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control.KeywordController">
+    <children>
+        <Label alignment="CENTER" layoutY="-4.0" prefHeight="63.0" prefWidth="704.0" text="keyword解密">
+            <font>
+                <Font name="System Bold Italic" size="36.0" />
+            </font>
+        </Label>
+        <Label layoutX="53.0" layoutY="59.0" prefHeight="43.0" prefWidth="147.0" text="请输入密文">
+            <font>
+                <Font name="System Bold Italic" size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="keywordDcipher" layoutX="53.0" layoutY="117.0" prefHeight="43.0" prefWidth="514.0" />
+        <Label layoutX="53.0" layoutY="184.0" prefHeight="43.0" prefWidth="147.0" text="请输入密钥">
+            <font>
+                <Font name="System Bold Italic" size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="keywordDkey" layoutX="53.0" layoutY="242.0" prefHeight="43.0" prefWidth="514.0" />
+        <Button fx:id="keywordDsure" layoutX="127.0" layoutY="313.0" mnemonicParsing="false" onAction="#keywordDsureEvent" prefHeight="43.0" prefWidth="126.0" text="确认" />
+        <Button fx:id="keywordDempty" layoutX="378.0" layoutY="313.0" mnemonicParsing="false" onAction="#keywordDemptyEvent" prefHeight="43.0" prefWidth="126.0" text="清空" />
+        <Label layoutX="53.0" layoutY="370.0" prefHeight="43.0" prefWidth="147.0" text="明文如下">
+            <font>
+                <Font name="System Bold Italic" size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="keywordDplain" layoutX="53.0" layoutY="428.0" prefHeight="43.0" prefWidth="514.0" />
+        <Button fx:id="keywordDexit" layoutX="591.0" layoutY="478.0" mnemonicParsing="false" onAction="#keywordDexitEvent" text="返回" />
+    </children>
+</AnchorPane>

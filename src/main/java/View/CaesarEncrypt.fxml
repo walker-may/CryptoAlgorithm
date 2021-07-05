@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="494.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control.CaesarController">
+   <children>
+      <Label alignment="CENTER" layoutX="-1.0" layoutY="1.0" prefHeight="55.0" prefWidth="600.0" text="Caesar密码加密">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="33.0" layoutY="67.0" prefHeight="55.0" prefWidth="121.0" text="请输入明文">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="CaesarEplain" layoutX="44.0" layoutY="122.0" prefHeight="36.0" prefWidth="456.0" />
+      <Label alignment="CENTER" layoutX="33.0" layoutY="158.0" prefHeight="55.0" prefWidth="121.0" text="请输入密钥">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="CaesarEkey" layoutX="44.0" layoutY="213.0" prefHeight="36.0" prefWidth="456.0" />
+      <Button fx:id="CaesarEsure" layoutX="116.0" layoutY="292.0" mnemonicParsing="false" onAction="#CaesarEsureEvent" prefHeight="36.0" prefWidth="121.0" text="确认" />
+      <Button fx:id="CaesarEempty" layoutX="321.0" layoutY="292.0" mnemonicParsing="false" onAction="#CaesarEemptyEvent" prefHeight="36.0" prefWidth="121.0" text="清空" />
+      <Label alignment="CENTER" layoutX="33.0" layoutY="328.0" prefHeight="55.0" prefWidth="121.0" text="密文如下">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="CaesarEcipher" layoutX="44.0" layoutY="383.0" prefHeight="36.0" prefWidth="456.0" />
+      <Button fx:id="btn_9" layoutX="500.0" layoutY="444.0" mnemonicParsing="false" onAction="#buttonClickEvent9" text="返回" />
+   </children>
+</AnchorPane>

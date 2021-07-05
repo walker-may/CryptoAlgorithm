@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="653.0" prefWidth="817.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control.EncryptTotalController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="-6.0" prefHeight="46.0" prefWidth="817.0" text="加密服务选择">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="40.0" prefHeight="55.0" prefWidth="251.0" text="请选择以下加密类型">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="CaesarEButton" layoutX="78.0" layoutY="119.0" mnemonicParsing="false" onAction="#CaesarEEvent" prefHeight="46.0" prefWidth="125.0" text="Caesar" />
+      <Button fx:id="keywordEButton" layoutX="266.0" layoutY="119.0" mnemonicParsing="false" onAction="#keywordEEvent" prefHeight="46.0" prefWidth="125.0" text="Keyword" />
+      <Button fx:id="AffineEButton" layoutX="456.0" layoutY="119.0" mnemonicParsing="false" onAction="#AffineEEvent" prefHeight="46.0" prefWidth="125.0" text="Affine" />
+      <Button fx:id="MultiliteralEButton" layoutX="78.0" layoutY="205.0" mnemonicParsing="false" onAction="#MultiliteralEEvent" prefHeight="46.0" prefWidth="125.0" text="Multiliteral" />
+      <Button fx:id="VigenereEButton" layoutX="266.0" layoutY="205.0" mnemonicParsing="false" onAction="#VigenereEEvent" prefHeight="46.0" prefWidth="125.0" text="Vigenere" />
+      <Button fx:id="PlayfairEButton" layoutX="456.0" layoutY="205.0" mnemonicParsing="false" onAction="#PlayfairEEvent" prefHeight="46.0" prefWidth="125.0" text="Playfair" />
+      <Button fx:id="AutokeyciphertextEButton" layoutX="79.0" layoutY="379.0" mnemonicParsing="false" onAction="#AutokeyciphertextEEvent" prefHeight="46.0" prefWidth="314.0" text="Autokey ciphertext" />
+      <Button fx:id="AutokeyplaintextEButton" layoutX="456.0" layoutY="378.0" mnemonicParsing="false" onAction="#AutokeyplaintextEEvent" prefHeight="46.0" prefWidth="314.0" text="Autokey plaintext" />
+      <Button fx:id="DoubleTranspositionEButton" layoutX="79.0" layoutY="536.0" mnemonicParsing="false" onAction="#DoubleTranspositionEEvent" prefHeight="46.0" prefWidth="314.0" text="Double Transposition" />
+      <Button fx:id="PermutationEButton" layoutX="78.0" layoutY="455.0" mnemonicParsing="false" onAction="#PermutationEEvent" prefHeight="46.0" prefWidth="314.0" text="Permutation" />
+      <Button fx:id="ColumnpermutationEButton" layoutX="456.0" layoutY="455.0" mnemonicParsing="false" onAction="#ColumnpermutationEEvent" prefHeight="46.0" prefWidth="314.0" text="Column permutation" />
+      <Button fx:id="RC4EButton" layoutX="642.0" layoutY="119.0" mnemonicParsing="false" onAction="#RC4EEvent" prefHeight="46.0" prefWidth="125.0" text="RC4" />
+      <Button fx:id="DESEButton" layoutX="78.0" layoutY="289.0" mnemonicParsing="false" onAction="#DESEEvent" prefHeight="46.0" prefWidth="125.0" text="DES" />
+      <Button fx:id="AESEButton" layoutX="642.0" layoutY="205.0" mnemonicParsing="false" onAction="#AESEEvent" prefHeight="46.0" prefWidth="125.0" text="AES" />
+      <Button fx:id="RSAEButton" layoutX="266.0" layoutY="289.0" mnemonicParsing="false" onAction="#RSAEEvent" prefHeight="46.0" prefWidth="125.0" text="RSA" />
+      <Button fx:id="ECCEButton" layoutX="642.0" layoutY="536.0" mnemonicParsing="false" onAction="#ECCEEvent" prefHeight="46.0" prefWidth="125.0" text="ECC" />
+      <Button fx:id="MD5EButton" layoutX="456.0" layoutY="536.0" mnemonicParsing="false" onAction="#MD5EEvent" prefHeight="46.0" prefWidth="125.0" text="MD5" />
+      <Button fx:id="DHEButton" layoutX="456.0" layoutY="289.0" mnemonicParsing="false" onAction="#DHEEvent" prefHeight="46.0" prefWidth="125.0" text="DH密钥交换" />
+      <Button fx:id="btn_6" layoutX="710.0" layoutY="602.0" mnemonicParsing="false" onAction="#buttonClickEvent6" text="返回" />
+   </children>
+</AnchorPane>

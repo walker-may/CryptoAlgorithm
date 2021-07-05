@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="671.0" prefWidth="704.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control.DoubleTranspositionController">
+    <children>
+        <Label alignment="CENTER" layoutY="-4.0" prefHeight="63.0" prefWidth="704.0" text="Double Transposition解密">
+            <font>
+                <Font name="System Bold Italic" size="36.0" />
+            </font>
+        </Label>
+        <Label layoutX="53.0" layoutY="59.0" prefHeight="43.0" prefWidth="147.0" text="请输入密文">
+            <font>
+                <Font name="System Bold Italic" size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="DoubleTranspositionDcipher" layoutX="53.0" layoutY="117.0" prefHeight="43.0" prefWidth="514.0" />
+        <Label layoutX="53.0" layoutY="184.0" prefHeight="43.0" prefWidth="229.0" text="请输入第二轮密钥">
+            <font>
+                <Font name="System Bold Italic" size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="DoubleTranspositionDkey2" layoutX="53.0" layoutY="242.0" prefHeight="43.0" prefWidth="514.0" />
+        <Button fx:id="DoubleTranspositionDsure" layoutX="127.0" layoutY="439.0" mnemonicParsing="false" onAction="#DoubleTranspositionDsureEvent" prefHeight="43.0" prefWidth="126.0" text="确认" />
+        <Button fx:id="DoubleTranspositionDempty" layoutX="378.0" layoutY="439.0" mnemonicParsing="false" onAction="#DoubleTranspositionDemptyEvent" prefHeight="43.0" prefWidth="126.0" text="清空" />
+        <Label layoutX="53.0" layoutY="488.0" prefHeight="43.0" prefWidth="147.0" text="明文如下">
+            <font>
+                <Font name="System Bold Italic" size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="DoubleTranspositionDplain" layoutX="53.0" layoutY="549.0" prefHeight="43.0" prefWidth="514.0" />
+        <Button fx:id="DoubleTranspositionDexit" layoutX="589.0" layoutY="613.0" mnemonicParsing="false" onAction="#DoubleTranspositionDexitEvent" text="返回" />
+      <Label layoutX="53.0" layoutY="301.0" prefHeight="43.0" prefWidth="202.0" text="请输入第一轮密钥">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="DoubleTranspositionDkey1" layoutX="53.0" layoutY="359.0" prefHeight="43.0" prefWidth="514.0" />
+    </children>
+</AnchorPane>

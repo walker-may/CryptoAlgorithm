@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="250.0" prefWidth="438.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Control.ExitController">
+   <children>
+      <Label layoutX="115.0" layoutY="41.0" prefHeight="54.0" prefWidth="209.0" text=" 是否确认退出系统">
+         <font>
+            <Font name="System Italic" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_4" layoutX="55.0" layoutY="152.0" mnemonicParsing="false" onAction="#buttonClickEvent4" prefHeight="36.0" prefWidth="111.0" text="确认" />
+      <Button fx:id="btn_5" layoutX="269.0" layoutY="152.0" mnemonicParsing="false" onAction="#buttonClickEvent5" prefHeight="36.0" prefWidth="111.0" text="取消" />
+   </children>
+</AnchorPane>
